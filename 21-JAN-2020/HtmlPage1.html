@@ -1,0 +1,287 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>CarWeb</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 5px;
+            border: 2px solid #dde3e4;
+        }
+
+        /* Clearfix (clear floats) */
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        #id1 {
+            border: none;
+            margin: 40px;
+            background-color: #ffffff;
+        }
+
+        #p {
+            font-family: Verdana;
+            padding: 20px 25px 3px 30px;
+            font-family: Arial;
+            /*color: #fefefe;*/
+        }
+
+        #id2 {
+            border: none;
+            margin: 40px;
+            height: 800px;
+            width: 800px;
+            background-color: #ffffff;
+        }
+
+        #id3 {
+            border: 8px solid #dde3e4;
+            height: 125px;
+            margin: 20px;
+        }
+        /*#id4 {
+            border: 2px solid #dde3e4;
+            width: 152px;
+            height: 119px;
+            margin: 1px;
+            background-color: #ffffff;
+        }*/
+        #id5 {
+            border: none;
+            margin: -840px 0px 400px 880px;
+            width: 600px;
+            height: 720px;
+            background-color: #ffffff;
+            padding: 10px;
+        }
+
+        li {
+            padding: 20px 10px 10px 0px;
+            text-align: left;
+            border: 1px solid black;
+            border-top: 0px;
+            border-left: 0px;
+            border-right: 0px;
+            border-bottom-style: dashed;
+            border-bottom-color: #dddddd;
+        }
+    </style>
+</head>
+<body style="background-color:#fbfbfb;width:80%;height:800px;">
+
+    <div id="id1">
+        <p id="p" style="color: #3f4754;font-size:20pt;"><b>Swift</b><span style="margin: 1200px;  color: #37404d; ">$420,00</span></p>
+        <p style="padding: 0 25px 15px 30px; color: #5a5959; ">123 Kathal St. Tampa City</p>
+    </div>
+
+    <div id="id2">
+        <img src="Images/car.jpg" alt="image not found" id="imgMain" style="margin:20px 20px 0 20px;height:550px;width:756px" />
+        <div id="id3">
+            <!--<div style="border: 3px solid #dde3e4; margin: 0px 600px 0px 0px; height: 125px;">
+                <img src="car1.jpg" style="height:116px;width:134px;padding:3px;"/>
+            </div>
+            <div style="border:3px solid black;margin:20px;">
+                <h1>hello</h1>
+
+            </div>-->
+            <div class="row">
+                <div style="border: 2px solid #dde3e4; width: 150px; height: 110px; padding: 3px;" class="column">
+                    <img src="Images/car.jpg" alt="Swift" style="width:100%;height:100%;" onclick="changeImage(this.src);">
+                </div>
+                <div style="border: 2px solid #dde3e4; width: 150px; height: 110px; padding: 3px;" class="column">
+                    <img src="c3.jpg" alt="Lamborgini" style="width:100%;height:100%;" onclick="changeImage(this.src);">
+                </div>
+                <div style="border: 2px solid #dde3e4; width: 150px; height: 110px; padding: 3px;" class="column">
+                    <img src="Images/car1.jpg" alt="Mountains" style="width:100%;height:100%;" onclick="changeImage(this.src);">
+                </div>
+                <div style="border: 2px solid #dde3e4; width: 150px; height: 110px; padding: 3px;" class="column">
+                    <img src="Images/car2.jpeg" alt="Mountains" style="width:100%;height:100%;" onclick="changeImage(this.src);">
+                </div>
+                <div style="border: 2px solid #dde3e4; width: 144px; height: 110px; padding: 3px;" class="column">
+                    <img src="Images/car5.jpeg" alt="Mountains" style="width:100%;height:100%;" onclick="changeImage(this.src);">
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <div id="id5">
+        <p style="color: #37404d;padding:10px 10px 10px 40px;"><b>SPECIFICATIONS</b></p>
+        <ul style="list-style-type:none;">
+            <li> Make<span style="margin: 415px;" id="spnModal">Maruthi</span></li>
+            <li>Model<span style="margin: 410px;" id="spnModal1">Maxima</span></li>
+            <li>BodyStyle<span style="margin:365px;" id="spnModal2">Convertible</span></li>
+            <li>Year<span style="margin:445px;" id="spnModal3">2017</span></li>
+            <li>Condition<span style="margin:375px;" id="spnModal4">BrandNew</span></li>
+            <li>Milege<span style="margin:400px;" id="spnModal5">34,000mi</span></li>
+            <li>InteriorColor<span style="margin:360px;" id="spnModal6">DarkGray</span></li>
+            <li>Transmission<span style="margin:330px;" id="spnModal7">6speedManual</span></li>
+            <li>Engine<span style="margin:345px;" id="spnModal8">3.4LMidEngineV6</span></li>
+            <li>No.OfGears:<span style="margin:420px;" id="spnModal9">5</span></li>
+            <li>Location<span style="margin:405px;" id="spnModal10">Toronto</span></li>
+            <li>FuelType<span style="margin:370px;" id="spnModal11">GasolineFuel</span></li>
+        </ul>
+
+
+    </div>
+    <script type="text/javascript">
+
+        function changeImage(image1)
+        {
+            
+            var i;
+            var carsinfo1 =" ";
+            for (i = 0; i < cars.length; i++) {
+                carsinfo1 += cars[i].make + "<br>" + cars[i].model + "<br>"
+                            + cars[i].bodyStyle + "<br>" + cars[i].year + "<br>"
+                            + cars[i].condition + "<br>" + cars[i].mileage + "<br>"
+                            + cars[i].interiorcolor + "<br>" + cars[i].transmission + "<br>"
+                            + cars[i].engine + "<br>" + cars[i].NoOfGears + "<br>"
+                            + cars[i].Location + "<br>" + cars[i].FuelType + "<br><br>";
+            }
+            var x = JSON.stringify(carsinfo1);
+            
+            for (var i = 0; i < x.length;i++)
+            {
+            document.getElementById('spnModal').innerHTML = x[i].make;
+            document.getElementById('spnModal1').innerHTML = x[i].model;
+            document.getElementById('spnModal2').innerHTML = x[i].bodyStyle;
+            document.getElementById('spnModal3').innerHTML = x[i].year;
+            document.getElementById('spnModal4').innerHTML = x[i].condition;
+            document.getElementById('spnModal5').innerHTML = x[i].mileage;
+            document.getElementById('spnModal6').innerHTML = x[i].interiorcolor;
+            document.getElementById('spnModal7').innerHTML = x[i].transmission;
+            document.getElementById('spnModal8').innerHTML = x[i].engine;
+            document.getElementById('spnModal9').innerHTML = x[i].NoOfGears;
+            document.getElementById('spnModal10').innerHTML = x[i].Location;
+            document.getElementById('spnModal11').innerHTML = x[i].FuelType;
+
+            document.getElementById('imgMain').src = image1;
+
+            }
+            alert(carsinfo1);
+            
+
+        }
+        //function changeText()
+        //{
+        //    var i;
+        //    var carsinfo1 = "";
+        //    for (i = 0; i < cars.length; i++)
+        //    {
+        //        carsinfo1 += cars[i].make + "<br>" + cars[i].model + "<br>"
+        //                    + cars[i].bodyStyle + "<br>" + cars[i].year + "<br>"
+        //                    + cars[i].condition + "<br>" + cars[i].mileage + "<br>"
+        //                    + cars[i].interiorcolor + "<br>" + cars[i].transmission + "<br>"
+        //                    + cars[i].engine + "<br>" + cars[i].NoOfGears + "<br>"
+        //                    + cars[i].Location + "<br>" + cars[i].FuelType + "<br><br>";
+        //    }
+        //    alert(carinfo1);
+
+        //for(carsinfo in carsinfo1)
+        //{
+        //    document.getElementById('spnModal').innerHTML = carsinfo.make;
+        //    document.getElementById('spnModal1').innerHTML = carsinfo.model;
+        //    document.getElementById('spnModal2').innerHTML = carsinfo.bodyStyle;
+        //    document.getElementById('spnModal3').innerHTML = carsinfo.year;
+        //    document.getElementById('spnModal4').innerHTML = carsinfo.condition;
+        //    document.getElementById('spnModal5').innerHTML = carsinfo.mileage;
+        //    document.getElementById('spnModal6').innerHTML = carsinfo.interiorcolor;
+        //    document.getElementById('spnModal7').innerHTML = carsinfo.transmission;
+        //    document.getElementById('spnModal8').innerHTML = carsinfo.engine;
+        //    document.getElementById('spnModal9').innerHTML = carsinfo.NoOfGears;
+        //    document.getElementById('spnModal10').innerHTML = carsinfo.Location;
+        //    document.getElementById('spnModal11').innerHTML = carsinfo.FuelType;
+
+        //    //}
+        //}
+
+        var cars =
+		[
+			{
+			    "make": "Swift",
+			    "model": "Model1",
+			    "bodyStyle": "NonConvertible",
+			    "year": "2022",
+			    "condition": "New",
+			    "mileage": "31000mi",
+			    "interiorcolor": "Black",
+			    "transmission": "5-speed Manual",
+			    "engine": "3.2L",
+			    "NoOfGears": "5",
+			    "Location": "India",
+			    "FuelType": "Petrol"
+			},
+			{
+			    "make": "Ferrari",
+			    "model": "Model2",
+			    "bodyStyle": "Convertible",
+			    "year": "2021",
+			    "condition": "New1",
+			    "mileage": "32000mi",
+			    "interiorcolor": "Gray",
+			    "transmission": "6-speed Manual",
+			    "engine": "3.5L",
+			    "NoOfGears": "6",
+			    "Location": "Bangalore",
+			    "FuelType": "GasolineFuel"
+			},
+			{
+			    "make": "Maruthi",
+			    "model": "Model3",
+			    "bodyStyle": "NonConvertible",
+			    "year": "2018",
+			    "condition": "New2",
+			    "mileage": "25000mi",
+			    "interiorcolor": "Blue",
+			    "transmission": "4-speed Manual",
+			    "engine": "3.0L",
+			    "NoOfGears": "5",
+			    "Location": "Bellary",
+			    "FuelType": "GasolineFuel1"
+			},
+			{
+			    "make": "Audi",
+			    "model": "Model4",
+			    "bodyStyle": "NoncConvertible",
+			    "year": "2020",
+			    "condition": "New3",
+			    "mileage": "34000mi",
+			    "interiorcolor": "Dark blue",
+			    "transmission": "8-speed Manual",
+			    "engine": "3.6L",
+			    "NoOfGears": "6",
+			    "Location": "JP Nagar",
+			    "FuelType": "Dieseal"
+			},
+			{
+			    "make": "BMW",
+			    "model": "Model5",
+			    "bodyStyle": "NonConvertible",
+			    "year": "2026",
+			    "condition": "New4",
+			    "mileage": "36000mi",
+			    "interiorcolor": "Dark Gray",
+			    "transmission": "9-speed Manual",
+			    "engine": "3.8L",
+			    "NoOfGears": "6",
+			    "Location": "India",
+			    "FuelType": "Petrol"
+			}
+		];
+
+
+    </script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+﻿{ 
+   var cars = [ 
+      { 
+         "make":"Swift",
+         "model":"Model1",
+         "bodyStyle":"NonConvertible",
+         "year":2022,
+         "condition":"New",
+         "mileage":"31000mi",
+         "interiorcolor":"Black",
+         "transmission":"5-speed Manual",
+         "engine":"3.2L",
+         "NoOfGears":5,
+         "Location":"India",
+         "FuelType":"Petrol"
+      },
+      { 
+         "make":"Ferrari",
+         "model":"Model2",
+         "bodyStyle":"Convertible",
+         "year":2021,
+         "condition":"New1",
+         "mileage":"32000mi",
+         "interiorcolor":"Gray",
+         "transmission":"6-speed Manual",
+         "engine":"3.5L",
+         "NoOfGears":6,
+         "Location":"Bangalore",
+         "FuelType":"GasolineFuel"
+      },
+      { 
+         "make":"Maruthi",
+         "model":"Model3",
+         "bodyStyle":"NonConvertible",
+         "year":2018,
+         "condition":"New2",
+         "mileage":"25000mi",
+         "interiorcolor":"Blue",
+         "transmission":"4-speed Manual",
+         "engine":"3.0L",
+         "NoOfGears":5,
+         "Location":"Bellary",
+         "FuelType":"GasolineFuel1"
+      },
+      { 
+         "make":"Audi",
+         "model":"Model4",
+         "bodyStyle":"NoncConvertible",
+         "year":2020,
+         "condition":"New3",
+         "mileage":"34000mi",
+         "interiorcolor":"Dark blue",
+         "transmission":"8-speed Manual",
+         "engine":"3.6L",
+         "NoOfGears":6,
+         "Location":"JP Nagar",
+         "FuelType":"Dieseal"
+      },
+      { 
+         "make":"BMW",
+         "model":"Model5",
+         "bodyStyle":"NonConvertible",
+         "year":2026,
+         "condition":"New4",
+         "mileage":"36000mi",
+         "interiorcolor":"Dark Gray",
+         "transmission":"9-speed Manual",
+         "engine":"3.8L",
+         "NoOfGears":6,
+         "Location":"India",
+         "FuelType":"Petrol"
+      }
+   ]
+};
