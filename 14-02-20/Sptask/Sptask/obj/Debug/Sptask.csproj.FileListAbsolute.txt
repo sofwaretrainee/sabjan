@@ -1,0 +1,5 @@
+c:\users\sabjan_p\documents\visual studio 2013\Projects\Sptask\Sptask\bin\Sptask.dll.config
+c:\users\sabjan_p\documents\visual studio 2013\Projects\Sptask\Sptask\bin\Sptask.dll
+c:\users\sabjan_p\documents\visual studio 2013\Projects\Sptask\Sptask\bin\Sptask.pdb
+c:\users\sabjan_p\documents\visual studio 2013\Projects\Sptask\Sptask\obj\Debug\Sptask.dll
+c:\users\sabjan_p\documents\visual studio 2013\Projects\Sptask\Sptask\obj\Debug\Sptask.pdb
