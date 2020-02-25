@@ -1,0 +1,7 @@
+D:\New folder\MySql\MySql\bin\MySql.dll.config
+D:\New folder\MySql\MySql\bin\MySql.dll
+D:\New folder\MySql\MySql\bin\MySql.pdb
+D:\New folder\MySql\MySql\bin\MySql.Data.DLL
+D:\New folder\MySql\MySql\obj\Debug\MySql.dll
+D:\New folder\MySql\MySql\obj\Debug\MySql.pdb
+D:\New folder\MySql\MySql\obj\Debug\MySql.csprojResolveAssemblyReference.cache
