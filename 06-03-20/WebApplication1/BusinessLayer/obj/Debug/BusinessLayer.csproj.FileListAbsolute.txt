@@ -1,0 +1,10 @@
+D:\sabjan\WebApplication1\BusinessLayer\bin\Debug\BusinessLayer.dll
+D:\sabjan\WebApplication1\BusinessLayer\bin\Debug\BusinessLayer.pdb
+D:\sabjan\WebApplication1\BusinessLayer\bin\Debug\DBLayer.dll
+D:\sabjan\WebApplication1\BusinessLayer\bin\Debug\Models.dll
+D:\sabjan\WebApplication1\BusinessLayer\bin\Debug\MySql.Data.dll
+D:\sabjan\WebApplication1\BusinessLayer\bin\Debug\DBLayer.pdb
+D:\sabjan\WebApplication1\BusinessLayer\bin\Debug\Models.pdb
+D:\sabjan\WebApplication1\BusinessLayer\obj\Debug\BusinessLayer.csprojResolveAssemblyReference.cache
+D:\sabjan\WebApplication1\BusinessLayer\obj\Debug\BusinessLayer.dll
+D:\sabjan\WebApplication1\BusinessLayer\obj\Debug\BusinessLayer.pdb

@@ -1,0 +1,4 @@
+D:\sabjan\WebApplication1\DBLayer\bin\Debug\DBLayer.dll
+D:\sabjan\WebApplication1\DBLayer\bin\Debug\DBLayer.pdb
+D:\sabjan\WebApplication1\DBLayer\obj\Debug\DBLayer.dll
+D:\sabjan\WebApplication1\DBLayer\obj\Debug\DBLayer.pdb
